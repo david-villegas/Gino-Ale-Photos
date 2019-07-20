@@ -1,0 +1,201 @@
+/* code by webdevtrick ( https://webdevtrick.com ) */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: futuraL !important;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  background: rgba(0,0,0,.3) !important;
+}
+a {
+  text-decoration: none;
+	color: white;
+}
+
+.backlogo{
+  position: absolute;
+  width: 100%;
+  z-index: 1030;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.firstimg,
+.secondimg,
+.thirdimg,
+.forthimg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+
+.firstimg {
+  background-image: url(../img/a_001.jpg);
+  min-height: 100%;
+}
+
+.secondimg {
+  background-image: url(../img/a_005.jpg);
+  min-height: 500px;
+}
+
+.thirdimg {
+  background-image: url(../img/a_006.jpg);
+  min-height: 500px;
+}
+
+.forthimg {
+  background-image: url(../img/a_008.jpg);
+  min-height: 100%;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+
+.section-dark {
+  background-color: black;
+  color: #ddd;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text .border {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #dee2e6!important;
+}
+
+.text .border:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.text .border a{
+  text-decoration: none;
+	color: white;
+}
+
+.text .border:hover a{
+  color: #000 !important;
+}
+
+@media (max-width: 568px) {
+  .firstimg,
+  .secondimg,
+  .thirdimg,
+  .forthimg {
+    background-attachment: scroll;
+  }
+  .main__title{
+    font-size: 75px !important;
+  }
+}
+
+#myBtn.show {
+  bottom: 20px;
+}
+
+#myBtn {
+  width: 40px;
+  height: 45px;
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  z-index: 100;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+	border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+#myBtn:hover {
+	background-color: #555;
+	transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: futuraL;
+  src: url(../fonts/FuturaPTLight.otf);
+}
+
+.main{
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+}
+
+.main__title{
+  font-family: futuraL;
+  font-size: 110px;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: -.01em;
+  line-height: 1em;
+  color: #fff;
+}
+
+.main__subtitle{
+  font-size: 20px;
+  color: #fff;
+}
+
+.main__btn{
+  font-size: 20px;
+  font-weight: 200;
+  font-family: futuraL;
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .2em;
+  border: 2px solid #dee2e6!important;
+}
+
+.main__btn:hover{
+  background-color: #fff;
+  color: #000 !important;
+  cursor: pointer;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
