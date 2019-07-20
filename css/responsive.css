@@ -1,0 +1,56 @@
+/* lg */
+@media (min-width: 1200px) {
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-item img{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+/* xs */
+@media (max-width: 767px) {
+  .carousel-item img{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 20px;
+    height: 30px;
+    line-height: 25px;
+    width: 30px !important;
+  }
+
+  #home-slider:hover .carousel-control-next {
+    right: 15px;
+  }
+
+  #home-slider:hover .carousel-control-prev {
+    left: 15px;
+  }
+
+  .logo{
+    width: 150px;
+    height: 34px;
+  }
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+
+}

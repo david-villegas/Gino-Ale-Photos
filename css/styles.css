@@ -1,0 +1,363 @@
+body{
+	font-family: futuraL !important;
+  background-image: linear-gradient(180deg, black, white);
+  background-repeat: no-repeat;
+}
+
+footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+section{
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: futuraL;
+  src: url(../fonts/FuturaPTLight.otf);
+}
+
+/* Estilos en General */
+
+.logo{
+	width: 300px;
+	height: 68px;
+}
+
+.nav-item{
+	margin: 15px;
+}
+
+.nav-link:hover{
+	border-bottom: 1px solid #fff;
+}
+
+#myBtn.show {
+  bottom: 20px;
+}
+
+#myBtn {
+  width: 40px;
+  height: 45px;
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  z-index: 100;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+	border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+#myBtn:hover {
+	background-color: #555;
+	transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+}
+
+/* Footer Social Icons*/
+
+.ft ul {
+	margin : 0;
+	padding : 0;
+	text-align : center;
+}
+.ft ul li {
+	list-style : none outside none;
+	padding-right : 10px;
+	display : inline;
+}
+.ft ul li a {
+	/* border : #818181 solid 1px;
+	border-radius : 50%; */
+	display : inline-block;
+	margin : 0 auto;
+	padding : 7px 11px;
+	text-align : center;
+}
+.ft ul li a:hover {
+  -webkit-transform: scale(1.25); /*Safari y Chrome*/
+  -moz-transform:scale(1.25); /*Firefox */
+  -ms-transform:scale(1.25); /*Opera*/
+  -o-transform:scale(1.25); /*IE 9*/
+  transform: scale(1.25);
+  transition: all 0.5s ease 0s;
+}
+.ft ul li a i {
+	color : white;
+	font-size : 20px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+}
+.ft .pp-facebook:hover i{
+  color: #3b5894;
+}
+.ft .pp-twitter:hover i{
+  color: #1da1f2;
+}
+.ft .pp-instagram:hover i{
+  color: #e67135;
+}
+.ft .pp-google:hover i{
+  color: #dd4b39;
+}
+.ft .pp-linkedin:hover i{
+  color: #006699;
+}
+
+/* Carousel Styles*/
+
+#carouselimages {
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50% !important;
+  height: 51px;
+  width: 51px !important;
+  line-height: 48px;
+  border-radius: 50%;
+  border:1px solid #fff;
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease !important;
+}
+
+.carousel-control-prev, .carousel-control-next a{
+	color: #00AFF0;
+}
+
+.carousel-control-prev {
+  left: -51px !important;
+}
+
+.carousel-control-next {
+  right: -51px !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	color: rgb(0, 0, 0);
+	background-color: #fff;
+}
+
+#carouselimages:hover .carousel-control-prev {
+	left:30px !important;
+}
+
+#carouselimages:hover .carousel-control-next {
+	right:30px !important;
+}
+
+.carousel-indicators li{
+	border-radius: 50%;
+	width: 15px !important;
+	height: 15px !important;
+}
+
+.carousel-control-prev:hover i,
+.carousel-control-next:hover i{
+	color: rgb(0, 0, 0);
+}
+
+/* CARD PROJECTS STYLES */
+
+.card{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.pp-gallery{
+  position: relative;
+}
+
+.pp-gallery .card figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  text-align: center;
+}
+
+.pp-gallery .card figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  opacity: 1;
+}
+
+.pp-gallery .card figure figcaption {
+  padding: 2em;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.pp-gallery .card figure figcaption,
+.pp-gallery .card figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pp-gallery .card figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.pp-gallery .card figure .h4 {
+  word-spacing: -0.15em;
+  font-weight: 600;
+}
+
+.pp-gallery .card figure .h4,
+.pp-gallery .card figure p {
+  margin: 0;
+}
+
+.pp-gallery .card figure p {
+  letter-spacing: 1px;
+  font-size: 60%;
+}
+
+.pp-gallery figure.pp-effect figcaption {
+  padding: 12px;
+}
+
+.pp-gallery figure.pp-effect figcaption::before,
+.pp-gallery figure.pp-effect figcaption::after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+
+.pp-gallery figure.pp-effect figcaption::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.pp-gallery figure.pp-effect figcaption::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.pp-gallery figure.pp-effect .h4 {
+  padding-top: 26%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  opacity: 0;
+}
+
+.pp-gallery figure.pp-effect p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+}
+
+.pp-gallery figure.pp-effect img,
+.pp-gallery figure.pp-effect .h4 {
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -25px, 0);
+}
+
+.pp-gallery figure.pp-effect img,
+.pp-gallery figure.pp-effect figcaption::before,
+.pp-gallery figure.pp-effect figcaption::after,
+.pp-gallery figure.pp-effect p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+.pp-gallery figure.pp-effect:hover img {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.pp-gallery figure.pp-effect:hover figcaption::before,
+.pp-gallery figure.pp-effect:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.pp-gallery figure.pp-effect:hover figcaption:before {
+  background: rgba(31, 30, 30, 0.5);
+}
+
+.pp-gallery figure.pp-effect:hover .h4,
+.pp-gallery figure.pp-effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #FFFFFF;
+}
+
+.pp-gallery figure.pp-effect:hover figcaption::after,
+.pp-gallery figure.pp-effect:hover .h4,
+.pp-gallery figure.pp-effect:hover p,
+.pp-gallery figure.pp-effect:hover img {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
